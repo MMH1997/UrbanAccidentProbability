@@ -22,7 +22,7 @@ CatBoost (main), Logistic Regression, SVM, KNN, MLP, Random Forest, Gradient Boo
 - ROC-AUC, PR-AUC, Log Loss, Brier  
 
 ## Data
-Dataset not included due to size.  
+The whole dataset not included due to size.  
 Sources: Madrid Open Data + AEMET.  
 A small sample is provided for testing.
 
