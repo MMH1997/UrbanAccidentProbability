@@ -1,6 +1,6 @@
 # Metrics
 
-This directory contains the evaluation metrics used throughout the project.
+This directory contains the evaluation metrics used in the project.
 
 ## Overview
 
@@ -8,14 +8,11 @@ The metrics are divided into two groups:
 
 ### 1. IA/N (Main Metric)
 
-The **IA/N index** is the primary evaluation metric proposed in this work.
-It measures how much higher the predicted probabilities are for accident events compared to non-accident events.
-
-This metric is specifically designed for **rare event probability estimation**, where traditional classification metrics may fail to capture meaningful differences between models.
+The **IA/N index** is the main metric proposed in this work and is used for model comparison.
 
 ### 2. Standard Metrics
 
-In addition to IA/N, a set of widely used metrics is implemented:
+In addition to IA/N, the following standard metrics are included:
 
 * Accuracy
 * Balanced Accuracy
@@ -24,10 +21,10 @@ In addition to IA/N, a set of widely used metrics is implemented:
 * Log Loss
 * Brier Score
 
-These metrics serve two purposes:
+These metrics include:
 
-* **Complementary evaluation**: to relate our results with standard approaches in the literature
-* **Ablation and analysis experiments**: to assess model behavior under different experimental setups (e.g., by hour, by road)
+* Those used as **additional metrics** (Accuracy and Balanced Accuracy)
+* Those used in **ablation and analysis experiments** (the remaining metrics)
 
 ## Usage
 
@@ -39,5 +36,4 @@ from metrics.metrics import evaluate_all
 results = evaluate_all(y_true, probs)
 ```
 
-IA/N is implemented separately and should be used as the main metric for model comparison.
-
+IA/N is implemented separately.
